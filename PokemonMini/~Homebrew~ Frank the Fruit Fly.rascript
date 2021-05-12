@@ -24,6 +24,7 @@
 //        0x0a = Trees
 //        
 //        Level 2 - Mountain:
+//        0x0b = Level 2 Screen
 //        0x0c = Snowflake
 //        0x0d = Walls
 //        0x0e = Pear
@@ -83,6 +84,20 @@
 
 
 function levelID() => byte(0x0533)
+stage_1trees = 0x0a
+stage_2level = 0x0b
+stage_2icicle = 0x14
+stage_3level = 0x15
+stage_3pineapple = 0x1e
+stage_4level = 0x1f
+stage_4gust = 0x28
+stage_5level = 0x29
+stage_5rooftop = 0x32
+stage_6level = 0x33
+endgame = 0x3a
 function minigameScore() => bye(0x03B9)
 function health1s() => byte(0x03B4)
 function health10s() => byte(0x03A8)
+
+achievement ("Making his way to Baltimore", "Frank has left Boise City", 3,
+    trigger = levelID() == stage_2level && prev(levelID()) == stage_1trees)
