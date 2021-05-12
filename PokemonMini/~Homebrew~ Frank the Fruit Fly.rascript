@@ -80,3 +80,9 @@
 //        0x39 = Bear
 //        
 //        0x3a = The End
+
+
+function levelID() => byte(0x0533)
+function minigameScore() => bye(0x03B9)
+function health1s() => byte(0x03B4)
+function health10s() => byte(0x03A8)
