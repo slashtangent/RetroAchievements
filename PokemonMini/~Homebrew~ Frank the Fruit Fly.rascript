@@ -95,6 +95,7 @@ stage_5level = 0x29
 stage_5rooftop = 0x32
 stage_6level = 0x33
 stage_6bear = 0x39
+minigame = 0xfe
 endgame = 0x3a
 function minigameScore1s() => byte(0x03B9) // Minigame Score 1's place
 function minigameScore10s() => byte(0x03b8) // Minigame Score 10's Place
@@ -106,7 +107,7 @@ achievement ("Making his way to Baltimore", "Frank has left Boise City", 2,
     trigger = levelID() == stage_2level && prev(levelID()) == stage_1trees)
     
 achievement ("Over the Mountains", "Frank traveled over the mountains and entered the desert", 3,
-    trigger = levelID() == stage_3level && prev(levelID()) == stage_2circle)
+    trigger = levelID() == stage_3level && prev(levelID()) == stage_2icicle)
     
 achievement ("Brutal Heat", "After crossing the desert, Frank made it to the Ocean", 4,
     trigger = levelID() == stage_4level && prev(levelID()) == stage_3pineapple)
@@ -121,5 +122,5 @@ achievement ("Journey Had Ended", "Frank arrived at Boise City", 5,
     trigger = levelID() == endgame && prev(levelID()) == stage_6bear)
     
 achievement ("Fly Swatter", "Enter deface in the password screen and score 25 points", 5,
-    trigger = minigameScore1s() == 0x66 && minigameScore10s() == 0x63
-    && prev(minigameScore1s()) == 0x65 && prev(minigameScore10s()) == 0x63)
+    trigger = levelID() == minigame && repeated(0,minigameScore1s() == 0x66 && minigameScore10s() == 0x63)
+    && repeated(0,prev(minigameScore1s()) == 0x65 && prev(minigameScore10s()) == 0x63))
