@@ -104,24 +104,24 @@ function health1s() => byte(0x03B4)
 function health10s() => byte(0x03A8)
 
 
-achievement ("Making his way to Baltimore", "Frank has left Boise City", 2,
-    trigger = prev(levelID()) == stage_2level && levelID() == stage_1trees)
+achievement ("Making his way to Baltimore", "Frank has left Boise City", 2, badge = "172444", id = 153694,
+    trigger = prev(levelID()) == stage_1trees && levelID() == stage_2level)
     
-achievement ("Over the Mountains", "Frank traveled over the mountains and entered the desert", 3,
-    trigger = prev(levelID()) == stage_3level && levelID() == stage_2icicle)
+achievement ("Over the Mountains", "Frank traveled over the mountains and entered the desert", 3, badge = "172450", id = 153700,"
+    trigger = prev(levelID()) == stage_2icicle && levelID() == stage_3level)
     
-achievement ("Brutal Heat", "After crossing the desert, Frank made it to the Ocean", 4,
-    trigger = prev(levelID()) == stage_4level && levelID() == stage_3pineapple)
+achievement ("Brutal Heat", "After crossing the desert, Frank made it to the Ocean", 4, badge = "172445", id = 153695,
+    trigger = prev(levelID()) == stage_3pineapple && levelID() == stage_4level)
     
-achievement ("The Mighty Ocean", "Frank braved the ocean and arrived at the city", 5,
-    trigger = prev(levelID()) == stage_5level && levelID() == stage_4gust)
+achievement ("The Mighty Ocean", "Frank braved the ocean and arrived at the city", 5, badge = "172447", id = 153697,
+    trigger = prev(levelID()) == stage_4gust && levelID() == stage_5level)
     
-achievement ("Almost There", "Frank exited the chimney and made it to the roof of an unbeatable level", 5,
-    trigger = prev(levelID()) == stage_5rooftop && levelID() == stage_5chimney)
+achievement ("Almost There", "Frank exited the chimney and made it to the roof of an unbeatable level", 5, badge = "172446", id = 153696,
+    trigger = prev(levelID()) == stage_5chimney && levelID() == stage_5rooftop)
     
-achievement ("Journey Had Ended", "Frank arrived at Boise City", 5,
-    trigger = levelID() == endgame && levelID() == stage_6bear)
+achievement ("Journey Has Ended", "Frank arrived at Boise City", 5, badge = 172448, id = 153698,
+    trigger = prev(levelID()) == stage_6bear && levelID() == endgame)
     
-achievement ("Fly Swatter", "Enter deface in the password screen and score 25 points", 5,
+achievement ("Fly Swatter", "Enter deface in the password screen and score 25 points", 5, badge = "172449", id = 153699
     trigger = levelID() == minigame && repeated(0,minigameScore1s() == 0x66 && minigameScore10s() == 0x63)
     && repeated(0,prev(minigameScore1s()) == 0x65 && prev(minigameScore10s()) == 0x63))
