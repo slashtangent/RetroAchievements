@@ -1,0 +1,1 @@
+{"ID":79639,"MemAddr":"0xO0a58ff=1_0xO0a58ff=0.1._R:0xH0a59a0<65_R:0xH0a59a0>66","Title":"Jojo's Bizarre Venture","Description":"Defeat Jojo and collect the resulting Ticket (must be the 66th total Ticket collected)","Points":10,"Author":"ShadwSonic","Modified":1617895027,"Created":1565044856,"BadgeName":"85644","Flags":3}
