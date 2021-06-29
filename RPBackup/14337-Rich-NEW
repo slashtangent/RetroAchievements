@@ -1,0 +1,45 @@
+//RP by SlashTangent
+
+Lookup:lvl
+0x01 = Menu
+0x02 = on The Space Circus Ship
+0xa0 = on Tensuns
+0xec = on Killer Expo
+0x8c = on Primitron
+0x65 = on Ultima Crash
+0xae = on Earth
+0x03 = in a cutscene
+0x9d = on Techno Mummy
+0x35 = in the Exterior of the Virtua Circus
+0x44 = in the War Simulation
+0x08 = in the Quarantine Ship
+0x05 = inside a building
+0x09 = in Torture World ☠
+0x16 = in the Virtua Circus
+0x2f = PrimiAstro
+0x0d = in the Happy Bump Bar
+0x06 = in the Cinema
+
+Format:life
+FormatType=value
+
+Format:killer
+FormatType=value
+
+Format:tensuns
+FormatType=Value
+
+Format:ultima
+FormatType=Value
+
+Format:primitron
+FormatType=Value
+
+Format:techno
+FormatType=Value
+
+Display:
+?0xM0e10c6=1?Warp++ Enabled. Achievements locked!
+?0xH0990c0=1?Starshot is preparing for adventure!
+?0xH0990c0!=01?Starshot is@lvl(0xH0990c0) | Killer Expo ⛽ @killer(38_0xH1aa880*-1)/38 | Ten Suns ⛽ @tensuns(36_0xH1aa882*-1)/36 | Ultima Crash ⛽ @ultima(22_0xH1aa884*-1)/22 | Primitron ⛽ @primitron(51_0xH1aa886*-1)/51 | Techno Mummy ⛽ @techno(46_0xH1aa88a*-1)/46
+Starshot is lost in space...
