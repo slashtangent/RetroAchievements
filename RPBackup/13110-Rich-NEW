@@ -1,0 +1,55 @@
+//RP by SlashTangent
+
+Lookup:map
+0x01 = Galacia Arena 1
+0x02 = Round Road
+0x03 = North Tussocks
+0x04 = Northern Wilderness
+0x05 = Siccanoa Lake
+0x06 = Battle Cave
+0x07 = Grave Forest
+0x08 = Akeej Arena
+0x09 = Battle Garden
+0x0a = North Hill
+0x0b = Water Link
+0x0c = Ruins Circuit
+0x0d = East Grave
+0x0e = Assault Forest
+0x0f = Galacia Arena 2
+0x10 = Cross Road
+0x11 = Southern Crater
+0x12 = Heat Valley
+0x13 = Siccanoa Lakeside
+0x14 = Battle Ruin
+0x15 = South Pond
+0x16 = Cave River
+0x17 = West Woods
+0x18 = Snow Peak
+0x19 = Freyzen Base 1
+0x1a = Circuit Valley
+0x1b = Merry Garden
+0x1c = Water Maze
+0x1d = Dual Ruin
+0x1e = Ghost Ave
+0x1f = East Woods
+0x20 = Battle Hoyle
+0x21 = Northern Highlands
+0x22 = Maze Canyon
+0x23 = Fate Island
+0x24 = Globe Garden
+0x25 = Snow Maze
+0x26 = Freyzen Base 2
+
+Format:wins
+FormatType:value
+
+Format:loss
+FormatType:value
+
+Format:kills
+FormatType:value
+
+Display:
+?0xH005d1d=02? Deciding on what to play...
+?0xH005d1d=06? Participating in the Battle League! | @map(0xH02a976) | W@wins(0xH02772c) | L@loss(0xH02772e) | ☠@kills(0xH027732)
+Proving the Todoroki name!
