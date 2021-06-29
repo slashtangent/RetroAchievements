@@ -1,0 +1,52 @@
+//RP by SlashTangent
+
+Lookup:char
+0x00 = Grace
+0x01 = Bahn
+0x02 = Raxel
+0x03 = Tokio
+0x04 = Sanman
+0x05 = Jane
+0x06 = Honey
+0x07 = Picky
+0x09 = Pepsiman
+
+Lookup:type
+0x00 = A
+0x01 = B
+0x02 = C
+0x03 = D
+0x04 = E
+0x05 = F
+0x06 = G
+0x07 = H
+0x08 = I
+0x09 = J
+0x0a = K
+
+Lookup:diff
+0x00 = Very Easy
+0x01 = Easy
+0x02 = Normal
+0x03 = Hard
+0x04 = Very Hard
+
+Format:round
+FormatType=value
+
+Format:Damage
+FormatType=Value
+
+Lookup:vic
+0x00 = ❌❌
+0x01 = ❌✔
+0x02 = ✔✔
+
+Display:
+?0x194db4=192? Wathcing the Opening Demo.
+?0xh194db5=05? Press Start Button
+?0xh194db5=06? Press Start Button
+?0x160602=9?🥫 Join the Pepsi generation: feel the taste! 🥫 | @vic(0xh1e0009) @char(0xh160603) VS.@char(0xh160602) @vic(0xh1e0008)| Round: @round(0xh1e0005)
+?0x1880d6=0? Arcade Mode | @vic(0xh1e0009) @char(0xh160603) VS.@char(0xh160602) @vic(0xh1e0008)| Round: @round(0xh1e0005) |Difficulty:@diff(0xh0000b3) 
+?0xh1880d6=2? 💪 Training to be the very best! | @char(0xh18fab3) VS.@char(0xh18fab2) | AI Type =@type(0xh161a00) | Damage Done = @Damage(0xh195c50)
+Selecting a Game Mode.
